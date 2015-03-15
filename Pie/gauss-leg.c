@@ -50,12 +50,12 @@ double gaussLeg(int iterations)
 		p[i] = nextP(p[prev]);
 	}
 
-	printf("%.20f\n", calculatePi(a[iterations], b[iterations], t[iterations]));
+	return calculatePi(a[iterations], b[iterations], t[iterations]);
 }
 
 int main(int argc, char const *argv[])
 {
-	gaussLeg(3);
+	printf("%.20f\n", gaussLeg(3));
 
 	return 0;
 }
